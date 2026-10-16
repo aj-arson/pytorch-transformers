@@ -1,0 +1,5 @@
+sacrebleu
+sentencepiece
+datasets
+tensorboard
+python-dotenv

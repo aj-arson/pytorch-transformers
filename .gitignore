@@ -1,0 +1,5 @@
+best_val_loss.pt
+.env
+.venv/
+data/
+__pycache__
