@@ -102,4 +102,4 @@ if __name__ == "__main__":
     loss_fn = torch.nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
     data_loaders = get_data_loaders()
-    train(model, data_loaders, config.epochs+2, 2000//16, config.max_eval_iters, loss_fn, optimizer)
+    train(model, data_loaders, config.epochs, config.eval_interval, config.max_eval_iters, loss_fn, optimizer)
